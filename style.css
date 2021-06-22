@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: -50% 50%, 150% -50%;
+  position: relative;
+}
+
+.card {
+  /* width: 50%; */
+  max-width: 21.9rem;
+  min-width: 19rem;
+  background-color: white;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* ID div */
+.id {
+  padding: 2rem;
+  text-align: center;
+}
+
+.id img {
+  border-radius: 50%;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: -90px;
+  position: relative;
+  border: 5px solid white;
+  top: -85px;
+  z-index: 2;
+}
+
+.id p {
+  padding-top: 1rem;
+}
+
+#name {
+  font-size: 18px;
+}
+
+#name span {
+  font-weight: 700;
+}
+
+/* Stats Div */
+
+.stats {
+  display: flex;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.stats p {
+  line-height: 1.5rem;
+}
+
+.stats span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Background */
+
+.card-bg img {
+  width: 100%;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 85%;
+    min-width: 1rem;
+  }
+}
